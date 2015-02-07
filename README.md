@@ -39,7 +39,7 @@ soot-wrapper | org.ucombinator | 0.1
 
 Depend on it from a tool that supports maven-style dependency management like maven, ivy, sbt, or leiningen.
 
-Sample `sbt` project configuration depending on this tool:
+Sample sbt `build.sbt` project configuration depending on this tool:
 
 ```
 name := "soot-test"
