@@ -1,13 +1,8 @@
 # soot-wrapper
 
-## API
+A functional wrapper around the Soot API providing access to the jimple, shimple, and call graph for classes loaded from source, class files, or APKs. Hides the global state of soot behind a thread safe interface (achieved by a big lock).
 
-```
-import org.ucombinator.SootWrapper;
-import soot.SootClass;
-import soot.util.Chain;
-import soot.jimple.toolkits.callgraph.CallGraph;
-```
+## API
 
 Call any of:
 
@@ -25,14 +20,24 @@ Chain<SootClass> shimple = source.getShimple();
 CallGraph source.getCallGraph();
 ```
 
+Imports as needed:
+
+```
+import org.ucombinator.SootWrapper;
+import soot.SootClass;
+import soot.util.Chain;
+import soot.jimple.toolkits.callgraph.CallGraph;
+```
+
 ## Getting it
 
 The current version of this project is published in the maven repository at https://ucombinator.github.io/maven-repo as:
-artifactId soot-wrapper
-groupId org.ucombinator
-version 0.1
 
-Depend on it from a tool that supports maven-style dependency management, like maven, ivy, sbt, or leiningen.
+ groupId | artifactId | version
+---------|------------|--------
+soot-wrapper | org.ucombinator | 0.1
+
+Depend on it from a tool that supports maven-style dependency management like maven, ivy, sbt, or leiningen.
 
 Sample `sbt` project configuration depending on this tool:
 
