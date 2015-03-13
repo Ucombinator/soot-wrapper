@@ -2,7 +2,7 @@ name := "soot-wrapper"
 
 organization := "org.ucombinator"
 
-version := "0.1"
+version := "0.1.1"
 
 
 // Depend on soot from the ucombinator repo

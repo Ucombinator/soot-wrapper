@@ -31,6 +31,8 @@ public class SootWrapper {
         public void configure() {
             Options.v().set_verbose(false);
 
+	    Options.v().set_include_all(true);
+
             // we need to link instructions to source line for display
             Options.v().set_keep_line_number(true);
 
